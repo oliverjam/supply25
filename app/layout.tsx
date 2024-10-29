@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${mona.className}`}>{children}</body>
+			<body className={`${mona.className} text-slate-dark`}>{children}</body>
 		</html>
 	);
 }
