@@ -7,6 +7,9 @@ export default {
 			fontFamily: {
 				sans: ["var(--font-mona-sans)"],
 			},
+			borderRadius: {
+				DEFAULT: "6px",
+			},
 			colors: {
 				white: "#fff",
 				plum: "#3d214d",
