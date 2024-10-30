@@ -7,7 +7,7 @@ import { Logos } from "./logos.tsx";
 export default function Home() {
 	return (
 		<>
-			<nav className="rounded-2xl p-2 sm:p-4 text-sm sm:text-base bg-white/75 shadow-lg backdrop-blur flex items-center gap-4 md:gap-8 lg:gap-16 fixed top-8 left-2 right-2 mx-auto max-w-7xl">
+			<nav className="rounded-2xl p-2 sm:p-4 text-sm sm:text-base bg-white/90 shadow-lg backdrop-blur flex items-center gap-4 md:gap-8 lg:gap-16 fixed top-8 left-2 right-2 mx-auto max-w-7xl">
 				<img
 					src={logo.src}
 					width="168"
@@ -67,7 +67,35 @@ export default function Home() {
 					/>
 				</div>
 			</section>
+			<section className="p-4 sm:p-12 sm:pb-24 bg-misty">
+				<div className="max-w-5xl mx-auto rounded-xl p-4 sm:p-16 bg-white shadow-lg">
+					<div className="space-y-4">
+						<h2 className="text-aubergine">
+							<div>For</div>
+							<div className="text-2xl sm:text-5xl font-bold">Buyers...</div>
+						</h2>
+						<p className="text-slate-light">
+							Manage your procurement process on one platform Manage your
+							procurement process on one platform Manage your procurement
+						</p>
+					</div>
+					<div className="grid grid-cols-3 gap-4 md:gap-8 mt-8 -mx-6 -mb-28">
+						<Card>Manage your procurement process on one platform.</Card>
+						<Card>Manage your procurement process on one platform.</Card>
+						<Card>Manage your procurement process on one platform.</Card>
+					</div>
+				</div>
+			</section>
+			<section className="min-h-[50vh]"></section>
 		</>
+	);
+}
+
+function Card({ children }: { children: React.ReactNode }) {
+	return (
+		<div className="p-4 sm:p-8 rounded-xl bg-slate text-white text-sm font-medium">
+			{children}
+		</div>
 	);
 }
 
