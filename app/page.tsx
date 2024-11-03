@@ -2,19 +2,15 @@ import Link from "next/link";
 import logo from "./images/logo.svg";
 import hero from "./images/hero.png";
 import what from "./images/what-we-do.png";
+import buyers from "./images/for-buyers.png";
 import { Logos } from "./logos.tsx";
+import { type StaticImageData } from "next/image";
 
 export default function Home() {
 	return (
 		<>
 			<nav className="rounded-2xl p-2 sm:p-4 text-sm sm:text-base bg-white/90 shadow-lg backdrop-blur flex items-center gap-4 md:gap-8 lg:gap-16 fixed top-8 left-2 right-2 mx-auto max-w-7xl">
-				<img
-					src={logo.src}
-					width="168"
-					height="25.1833"
-					alt="Supply25"
-					className="w-24 sm:w-32 md:w-40"
-				/>
+				<Img {...logo} alt="Supply25" className="w-24 sm:w-32 md:w-40" />
 				<div className="flex gap-4 md:gap-8 flex-1 font-medium text-slate-dark">
 					<Link href="/" className="hover:underline">
 						Home
@@ -37,13 +33,7 @@ export default function Home() {
 						</p>
 						<CallToAction />
 					</div>
-					<img
-						src={hero.src}
-						width={hero.width}
-						height={hero.height}
-						alt=""
-						className=""
-					/>
+					<Img {...hero} />
 				</div>
 			</section>
 			<section>
@@ -58,31 +48,92 @@ export default function Home() {
 						efficiency. Resulting in a better procurement outcome for all
 						parties.
 					</p>
-					<img
-						src={what.src}
-						width={what.width}
-						height={what.height}
-						alt=""
-						className=""
-					/>
+					<Img {...what} />
 				</div>
 			</section>
-			<section className="p-4 sm:p-12 sm:pb-24 bg-misty">
-				<div className="max-w-5xl mx-auto rounded-xl p-4 sm:p-16 bg-white shadow-lg">
-					<div className="space-y-4">
-						<h2 className="text-aubergine">
-							<div>For</div>
-							<div className="text-2xl sm:text-5xl font-bold">Buyers...</div>
-						</h2>
-						<p className="text-slate-light">
-							Manage your procurement process on one platform Manage your
-							procurement process on one platform Manage your procurement
-						</p>
+			<section className="py-12 px-6 sm:p-12 sm:py-24 bg-misty space-y-28 md:space-y-48">
+				<div className="Overlap max-w-5xl mx-auto">
+					<Card>
+						<div>
+							<h2 className="text-aubergine">
+								<div>For</div>
+								<div className="text-2xl sm:text-4xl md:text-5xl font-bold">
+									Experts...
+								</div>
+							</h2>
+							<p className="text-slate-light">
+								Manage your procurement process on one platform Manage your
+								procurement process on one platform Manage your procurement
+							</p>
+						</div>
+						<Img {...buyers} />
+					</Card>
+					<div className="grid md:grid-cols-3 gap-2 sm:gap-4 md:gap-6 px-6 sm:px-8">
+						<CardDark>
+							Manage your procurement process on one platform.
+						</CardDark>
+						<CardDark>
+							Automated contract management to make your life easier.
+						</CardDark>
+						<CardDark>
+							Access to industry approved assessments to assure your suppliers.
+						</CardDark>
 					</div>
-					<div className="grid grid-cols-3 gap-4 md:gap-8 mt-8 -mx-6 -mb-28">
-						<Card>Manage your procurement process on one platform.</Card>
-						<Card>Manage your procurement process on one platform.</Card>
-						<Card>Manage your procurement process on one platform.</Card>
+				</div>
+				<div className="Overlap max-w-5xl mx-auto">
+					<Card>
+						<div>
+							<h2 className="text-aubergine">
+								<div>For</div>
+								<div className="text-2xl sm:text-4xl md:text-5xl font-bold">
+									Buyers...
+								</div>
+							</h2>
+							<p className="text-slate-light">
+								Manage your procurement process on one platform Manage your
+								procurement process on one platform Manage your procurement
+							</p>
+						</div>
+						<Img {...buyers} />
+					</Card>
+					<div className="grid md:grid-cols-3 gap-2 sm:gap-4 md:gap-6 px-6 sm:px-8">
+						<CardDark>
+							Manage your procurement process on one platform.
+						</CardDark>
+						<CardDark>
+							Automated contract management to make your life easier.
+						</CardDark>
+						<CardDark>
+							Access to industry approved assessments to assure your suppliers.
+						</CardDark>
+					</div>
+				</div>
+				<div className="Overlap max-w-5xl mx-auto">
+					<Card>
+						<div>
+							<h2 className="text-aubergine">
+								<div>For</div>
+								<div className="text-2xl sm:text-4xl md:text-5xl font-bold">
+									Suppliers...
+								</div>
+							</h2>
+							<p className="text-slate-light">
+								Manage your procurement process on one platform Manage your
+								procurement process on one platform Manage your procurement
+							</p>
+						</div>
+						<Img {...buyers} />
+					</Card>
+					<div className="grid md:grid-cols-3 gap-2 sm:gap-4 md:gap-6 px-6 sm:px-8">
+						<CardDark>
+							Manage your procurement process on one platform.
+						</CardDark>
+						<CardDark>
+							Automated contract management to make your life easier.
+						</CardDark>
+						<CardDark>
+							Access to industry approved assessments to assure your suppliers.
+						</CardDark>
 					</div>
 				</div>
 			</section>
@@ -91,9 +142,30 @@ export default function Home() {
 	);
 }
 
+type ImgProps = StaticImageData & { className?: string; alt?: string };
+function Img({ alt = "", src, width, height, className }: ImgProps) {
+	return (
+		<img
+			src={src}
+			width={width}
+			height={height}
+			alt={alt}
+			className={className}
+		/>
+	);
+}
+
 function Card({ children }: { children: React.ReactNode }) {
 	return (
-		<div className="p-4 sm:p-8 rounded-xl bg-slate text-white text-sm font-medium">
+		<div className="rounded-xl p-6 sm:px-12 md:px-16 sm:pt-12 md:pt-16 pb-[calc(var(--overlap)+2rem)] bg-white shadow-lg">
+			<div className="sm:grid grid-cols-2 gap-2 md:gap-6">{children}</div>
+		</div>
+	);
+}
+
+function CardDark({ children }: { children: React.ReactNode }) {
+	return (
+		<div className="p-4 sm:p-6 rounded-xl bg-slate text-white text-sm font-medium">
 			{children}
 		</div>
 	);

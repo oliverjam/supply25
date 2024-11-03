@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	.Overlap {
+		display: grid;
+		--overlap: 2rem;
+		grid-template-rows: 1fr var(--overlap) auto;
+	}
+
+	.Overlap > * {
+		grid-column: 1 / -1;
+	}
+
+	.Overlap > :first-child {
+		grid-row: 1 / 3;
+	}
+
+	.Overlap > :last-child {
+		grid-row: 2 / 4;
+	}
+}
