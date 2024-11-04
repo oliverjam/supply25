@@ -87,35 +87,6 @@ export default function Home() {
 								<h2 className="text-aubergine">
 									<div>For</div>
 									<div className="text-2xl sm:text-4xl md:text-5xl font-bold">
-										Experts...
-									</div>
-								</h2>
-								<p className="text-slate-light">
-									Manage your procurement process on one platform Manage your
-									procurement process on one platform Manage your procurement
-								</p>
-							</div>
-							<Img file={buyers} />
-						</Card>
-						<div className="grid md:grid-cols-3 gap-2 sm:gap-4 md:gap-6 px-6 sm:px-8">
-							<CardDark>
-								Manage your procurement process on one platform.
-							</CardDark>
-							<CardDark>
-								Automated contract management to make your life easier.
-							</CardDark>
-							<CardDark>
-								Access to industry approved assessments to assure your
-								suppliers.
-							</CardDark>
-						</div>
-					</div>
-					<div className="Overlap max-w-5xl mx-auto isolate">
-						<Card>
-							<div>
-								<h2 className="text-aubergine">
-									<div>For</div>
-									<div className="text-2xl sm:text-4xl md:text-5xl font-bold">
 										Buyers...
 									</div>
 								</h2>
@@ -153,7 +124,36 @@ export default function Home() {
 									procurement process on one platform Manage your procurement
 								</p>
 							</div>
-							<Img file={buyers} />
+							<Img file={suppliers} />
+						</Card>
+						<div className="grid md:grid-cols-3 gap-2 sm:gap-4 md:gap-6 px-6 sm:px-8">
+							<CardDark>
+								Manage your procurement process on one platform.
+							</CardDark>
+							<CardDark>
+								Automated contract management to make your life easier.
+							</CardDark>
+							<CardDark>
+								Access to industry approved assessments to assure your
+								suppliers.
+							</CardDark>
+						</div>
+					</div>
+					<div className="Overlap max-w-5xl mx-auto isolate">
+						<Card>
+							<div>
+								<h2 className="text-aubergine">
+									<div>For</div>
+									<div className="text-2xl sm:text-4xl md:text-5xl font-bold">
+										Experts...
+									</div>
+								</h2>
+								<p className="text-slate-light">
+									Manage your procurement process on one platform Manage your
+									procurement process on one platform Manage your procurement
+								</p>
+							</div>
+							<Img file={experts} />
 						</Card>
 						<div className="grid md:grid-cols-3 gap-2 sm:gap-4 md:gap-6 px-6 sm:px-8">
 							<CardDark>
