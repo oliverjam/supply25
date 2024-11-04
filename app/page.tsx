@@ -17,10 +17,6 @@ import threadr from "./images/thread-right.png";
 import threadl from "./images/thread-left.png";
 import cog from "./images/cog.png";
 import squares from "./images/squares.png";
-import x from "./images/logos/x.svg";
-import facebook from "./images/logos/facebook.svg";
-import instagram from "./images/logos/instagram.svg";
-import linkedin from "./images/logos/linkedin.svg";
 
 export default function Home() {
 	return (
