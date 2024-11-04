@@ -167,7 +167,7 @@ export default function Home() {
 					<CallToAction />
 				</div>
 			</section>
-			<footer className="py-12 px-6 sm:p-12 sm:py-24 space-y-24">
+			<footer className="py-12 px-6 sm:p-12 sm:pt-32 pb-24 space-y-24 sm:space-y-32 text-sm lg:text-base">
 				<a
 					href="https://www.civtech.scot/demo-day-9-supply25"
 					className="max-w-max mx-auto grid grid-cols-[3rem_3rem_1fr] *:row-span-full items-center group"
@@ -185,18 +185,20 @@ export default function Home() {
 						</span>
 					</div>
 				</a>
-				<div className="grid grid-cols-4 gap-6">
-					<div className="grid gap-1 align-content-start">
+				<div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+					<div className="grid gap-1 content-start">
 						<Img file={logo} className="w-36" />
 						<div className="text-xs">© 2024</div>
 					</div>
-					<div className="grid gap-1 align-content-start">
+					<div className="grid gap-1 content-start font-bold">
 						<a href="/home">Home</a>
 						<a href="/team">Team</a>
 					</div>
-					<div className="grid gap-1 align-content-start">
+					<div className="grid gap-1 content-start">
 						<h2>Contact</h2>
-						<a href="mailto:hello@supply25.com">hello@supply25.com</a>
+						<a href="mailto:hello@supply25.com" className="font-bold">
+							hello@supply25.com
+						</a>
 						<div className="flex gap-2">
 							<a href="">X</a>
 							<a href="">F</a>
@@ -204,8 +206,10 @@ export default function Home() {
 							<a href="">in</a>
 						</div>
 					</div>
-					<form>
-						<h2>Get updates straight to your inbox</h2>
+					<form className="space-y-2">
+						<h2 className="text-lg font-bold">
+							Get updates straight to your inbox
+						</h2>
 						<InputGroup>
 							<input
 								type="email"
@@ -213,19 +217,19 @@ export default function Home() {
 								id="email"
 								placeholder="Your email"
 								aria-label="Your email"
+								className="placeholder:text-slate"
 							/>
 						</InputGroup>
 					</form>
 				</div>
 			</footer>
-			<section className="min-h-[50vh]"></section>
 		</>
 	);
 }
 
 function InputGroup({ children }: { children: React.ReactNode }) {
 	return (
-		<div className="rounded-lg border-2 border-pink flex [&>input]:flex-1 [&>input]:p-2 [&>input]:rounded-l-lg">
+		<div className="rounded-lg border-2 border-pink flex [&>input]:flex-1 [&>input]:p-2 [&>input]:rounded-l-lg [&>input:focus]:outline-none focus-within:ring-2 ring-pink ring-offset-2">
 			{children}
 			<button className="bg-pink text-white w-10 p-2 grid place-content-center">
 				{">"}
