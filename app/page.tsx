@@ -21,6 +21,12 @@ import threadl from "./images/thread-left.png";
 import cog from "./images/cog.png";
 import squares from "./images/squares.png";
 
+export const metadata = {
+	title: "Supply 25",
+	description:
+		"A platform that allows buyers to easily create and adopt tried and tested high quality assessments for their procurements, that suppliers can complete seamlessly.",
+};
+
 export default function Home() {
 	return (
 		<>

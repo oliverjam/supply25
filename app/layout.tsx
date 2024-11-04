@@ -24,7 +24,6 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<head>
-				<title>Supply25</title>
 				<link
 					rel="icon"
 					type="image/png"
