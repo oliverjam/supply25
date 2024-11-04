@@ -9,7 +9,7 @@ const className = "w-auto h-8";
 
 export function Logos() {
 	return (
-		<div className="flex items-center justify-between gap-4 py-12 px-2">
+		<div className="flex items-center justify-between gap-4 py-12 px-2 overflow-x-auto [scrollbar-width:thin] [scrollbar-color:theme(colors.misty)_theme(colors.misty-light)]">
 			<img
 				src={renfrewshire.src}
 				width={renfrewshire.width}
