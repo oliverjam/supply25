@@ -10,6 +10,10 @@ import threadr from "./images/thread-right.png";
 import threadl from "./images/thread-left.png";
 import cog from "./images/cog.png";
 import squares from "./images/squares.png";
+import x from "./images/logos/x.svg";
+import facebook from "./images/logos/facebook.svg";
+import instagram from "./images/logos/instagram.svg";
+import linkedin from "./images/logos/linkedin.svg";
 import { Logos } from "./logos.tsx";
 import { type StaticImageData } from "next/image";
 import { ImagePicker } from "./image-picker.tsx";
@@ -233,11 +237,19 @@ export default function Home() {
 						<a href="mailto:hello@supply25.com" className="font-bold">
 							hello@supply25.com
 						</a>
-						<div className="flex gap-2">
-							<a href="">X</a>
-							<a href="">F</a>
-							<a href="">I</a>
-							<a href="">in</a>
+						<div className="flex gap-4">
+							<a href="">
+								<Img file={x} />
+							</a>
+							<a href="">
+								<Img file={facebook} />
+							</a>
+							<a href="">
+								<Img file={instagram} />
+							</a>
+							<a href="">
+								<Img file={linkedin} />
+							</a>
 						</div>
 					</div>
 					<div className="space-y-2">
