@@ -1,4 +1,4 @@
-import { Img } from "../image.tsx";
+import { Img } from "../ui/image.tsx";
 import Alexis from "../images/alexis.jpeg";
 import Alex from "../images/alex.jpeg";
 import { StaticImageData } from "next/image";

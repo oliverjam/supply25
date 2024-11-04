@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Img } from "./image.tsx";
+import { Img } from "./ui/image.tsx";
 import logo from "./images/logo.svg";
-import { CallToAction } from "./cta.tsx";
+import { CallToAction } from "./ui/cta.tsx";
 
 const mona = localFont({
 	src: "./fonts/mona-sans.woff2",

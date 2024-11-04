@@ -1,5 +1,5 @@
-import civtech from "./images/logos/civtech.png";
-import scotgov from "./images/logos/scot-gov.png";
+import civtech from "../images/logos/civtech.png";
+import scotgov from "../images/logos/scot-gov.png";
 
 const className = "w-auto h-8";
 

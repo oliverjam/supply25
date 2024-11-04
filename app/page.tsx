@@ -1,9 +1,9 @@
-import { CallToAction } from "./cta.tsx";
-import { Img } from "./image.tsx";
-import { ArrowRight } from "./icons.tsx";
-import { Logos } from "./logos.tsx";
-import { Accordion, AccordionTrigger } from "./accordion.tsx";
-import { EmailForm } from "./email-form.tsx";
+import { CallToAction } from "./ui/cta.tsx";
+import { Img } from "./ui/image.tsx";
+import { ArrowRight } from "./ui/icons.tsx";
+import { Logos } from "./ui/logos.tsx";
+import { Accordion, AccordionTrigger } from "./ui/accordion.tsx";
+import { EmailForm } from "./ui/email-form.tsx";
 import logo from "./images/logo.svg";
 import hero from "./images/hero.png";
 import what from "./images/what-we-do.png";
