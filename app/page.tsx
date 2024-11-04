@@ -8,6 +8,8 @@ import shapes from "./images/shapes.png";
 import civtech from "./images/civtech-stacked.png";
 import threadr from "./images/thread-right.png";
 import threadl from "./images/thread-left.png";
+import cog from "./images/cog.png";
+import squares from "./images/squares.png";
 import { Logos } from "./logos.tsx";
 import { type StaticImageData } from "next/image";
 import { ImagePicker } from "./image-picker.tsx";
@@ -43,8 +45,14 @@ export default function Home() {
 					<Img file={hero} />
 				</div>
 			</section>
-			<section>
+			<section className="relative">
 				<Logos />
+
+				<Img file={cog} className="absolute left-0 top-[20%] w-24 md:w-48" />
+				<Img
+					file={squares}
+					className="absolute right-0 top-[60%] w-24 md:w-48"
+				/>
 				<div className="max-w-xl mx-auto p-4 sm:p-8 text-center space-y-8">
 					<h2 className="max-w-max mx-auto rounded-full py-2 px-8 text-base leading-tight text-white bg-cornflower">
 						What we do
