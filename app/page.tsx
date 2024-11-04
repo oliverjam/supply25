@@ -170,16 +170,18 @@ export default function Home() {
 			<footer className="py-12 px-6 sm:p-12 sm:pt-32 pb-24 space-y-24 sm:space-y-32 text-sm lg:text-base Squares">
 				<a
 					href="https://www.civtech.scot/demo-day-9-supply25"
-					className="max-w-max mx-auto grid grid-cols-[3rem_3rem_1fr] *:row-span-full items-center group"
+					className="max-w-max mx-auto grid grid-cols-[1.5rem_1.5rem_1fr] md:grid-cols-[3rem_3rem_1fr] *:row-span-full items-center group"
 				>
 					<Img
 						aria-hidden="true"
 						file={civtech}
-						className="col-start-1 col-end-3 z-0 w-24 h-24 p-1 bg-cornflower"
+						className="col-start-1 col-end-3 z-0 w-12 md:w-24 h-12 md:h-24 p-1 bg-cornflower"
 					/>
-					<div className="col-start-2 col-end-4 grid rounded-xl border border-misty py-12 pl-20 pr-20 bg-white transition-shadow shadow-lg group-hover:shadow-xl">
+					<div className="col-start-2 col-end-4 grid rounded-xl border border-misty py-4 pl-10 pr-4 md:py-12 md:pl-20 md:pr-20 bg-white transition-shadow shadow-lg group-hover:shadow-xl">
 						<span className="sr-only">Civ Tech</span>
-						<span className="text-2xl font-bold">2024 Challenge Winner</span>
+						<span className="text-lg md:text-2xl font-bold">
+							2024 Challenge Winner
+						</span>
 						<span aria-hidden="true" className="font-medium underline">
 							Read more
 						</span>
