@@ -53,7 +53,9 @@ export default function Team() {
 						</p>
 					</div>
 					<div className="rounded-xl bg-white shadow-xl p-6 text-slate-dark">
-						<h3 className="text-xl font-medium">It's all built on trust</h3>
+						<h3 className="text-xl font-medium">
+							It&apos;s all built on trust
+						</h3>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 							consectetur do
