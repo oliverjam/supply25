@@ -48,7 +48,7 @@ export default function Home() {
 					className="absolute right-0 top-[60%] w-24 md:w-48"
 				/>
 				<div className="max-w-4xl mx-auto px-4 sm:px-8 space-y-8">
-					<h2 className="max-w-max mx-auto rounded-full py-2 px-8 text-base leading-tight text-white bg-cornflower">
+					<h2 className="max-w-max mx-auto rounded-full py-2 px-8 text-xl text-white bg-cornflower">
 						What we do
 					</h2>
 					<p className="text-lg sm:text-xl max-w-2xl mx-auto text-center text-balance">
