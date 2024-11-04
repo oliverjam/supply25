@@ -9,6 +9,7 @@ import civtech from "./images/civtech-stacked.png";
 import { Logos } from "./logos.tsx";
 import { type StaticImageData } from "next/image";
 import { ImagePicker } from "./image-picker.tsx";
+import { EmailForm } from "./email-form.tsx";
 
 export default function Home() {
 	return (
@@ -208,35 +209,15 @@ export default function Home() {
 							<a href="">in</a>
 						</div>
 					</div>
-					<form className="space-y-2">
+					<div className="space-y-2">
 						<h2 className="text-lg font-bold">
 							Get updates straight to your inbox
 						</h2>
-						<InputGroup>
-							<input
-								type="email"
-								name="email"
-								id="email"
-								placeholder="Your email"
-								aria-label="Your email"
-								className="placeholder:text-slate"
-							/>
-						</InputGroup>
-					</form>
+						<EmailForm />
+					</div>
 				</div>
 			</footer>
 		</>
-	);
-}
-
-function InputGroup({ children }: { children: React.ReactNode }) {
-	return (
-		<div className="rounded-lg border-2 border-pink flex [&>input]:flex-1 [&>input]:p-2 [&>input]:rounded-l-lg [&>input:focus]:outline-none focus-within:ring-2 ring-pink ring-offset-2">
-			{children}
-			<button className="bg-pink text-white w-10 p-2 grid place-content-center">
-				{">"}
-			</button>
-		</div>
 	);
 }
 
