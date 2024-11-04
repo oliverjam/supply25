@@ -36,11 +36,7 @@ export default function Home() {
 						<h1 className="font-bold text-4xl sm:text-6xl text-balance">
 							Making procurement better, faster and more secure.
 						</h1>
-						<p className="text-2xl">
-							A platform that allows buyers to easily create and adopt tried and
-							tested high quality assessments for their procurements, that
-							suppliers can complete seamlessly.
-						</p>
+						<p className="text-2xl">{metadata.description}</p>
 						<CallToAction />
 					</div>
 					<Img file={hero} />
