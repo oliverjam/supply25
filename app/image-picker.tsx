@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Img } from "./page.tsx";
+import { Img } from "./image.tsx";
 import overview from "./images/strategic-overview.png";
 
 export function ImagePicker() {

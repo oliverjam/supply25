@@ -1,4 +1,9 @@
 import Link from "next/link";
+import { Img } from "./image.tsx";
+import { ImagePicker } from "./image-picker.tsx";
+import { ArrowRight, Phone } from "./icons.tsx";
+import { Logos } from "./logos.tsx";
+import { EmailForm } from "./email-form.tsx";
 import logo from "./images/logo.svg";
 import hero from "./images/hero.png";
 import what from "./images/what-we-do.png";
@@ -16,11 +21,6 @@ import x from "./images/logos/x.svg";
 import facebook from "./images/logos/facebook.svg";
 import instagram from "./images/logos/instagram.svg";
 import linkedin from "./images/logos/linkedin.svg";
-import { Logos } from "./logos.tsx";
-import { type StaticImageData } from "next/image";
-import { ImagePicker } from "./image-picker.tsx";
-import { EmailForm } from "./email-form.tsx";
-import { ArrowRight, Phone } from "./icons.tsx";
 
 export default function Home() {
 	return (
@@ -263,22 +263,6 @@ export default function Home() {
 				</div>
 			</footer>
 		</>
-	);
-}
-
-type ImgProps = {
-	file: StaticImageData;
-} & React.ImgHTMLAttributes<HTMLImageElement>;
-
-export function Img({ alt = "", file, ...rest }: ImgProps) {
-	return (
-		<img
-			src={file.src}
-			width={file.width}
-			height={file.height}
-			alt={alt}
-			{...rest}
-		/>
 	);
 }
 
