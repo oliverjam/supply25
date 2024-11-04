@@ -5,7 +5,7 @@ import transport from "./images/logos/transport-scotland.png";
 import civtech from "./images/logos/civtech.png";
 import scotgov from "./images/logos/scot-gov.png";
 
-const className = "max-h-12";
+const className = "w-auto h-8";
 
 export function Logos() {
 	return (
