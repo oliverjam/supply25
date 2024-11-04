@@ -188,6 +188,7 @@ export default function Home() {
 			<footer className="py-12 px-6 sm:p-12 sm:pt-32 pb-24 space-y-24 sm:space-y-32 text-sm lg:text-base Squares">
 				<a
 					href="https://www.civtech.scot/demo-day-9-supply25"
+					target="_blank"
 					className="max-w-max mx-auto grid grid-cols-[1.5rem_1.5rem_1fr] md:grid-cols-[3rem_3rem_1fr] *:row-span-full items-center group"
 				>
 					<Img
