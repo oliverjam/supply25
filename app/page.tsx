@@ -168,11 +168,11 @@ export default function Home() {
 			<section className="py-12 px-6 sm:p-12 sm:py-24 bg-gradient-to-b from-white to-misty-light relative shadow-lg">
 				<Img
 					file={key}
-					className="hidden md:block absolute w-60 bottom-12 left-12 z-0"
+					className="hidden md:block absolute w-60 bottom-12 left-12 lg:left-24 2xl:left-[28vw] z-0"
 				/>
 				<Img
 					file={shapes}
-					className="hidden md:block absolute w-36 right-12 top-12 z-0"
+					className="hidden md:block absolute w-36 right-12 lg:right-24 2xl:right-[28vw] top-12 z-0"
 				/>
 				<div className="max-w-lg mx-auto grid justify-items-center gap-6 text-center text-balance isolate">
 					<h2 className="text-2xl md:text-4xl font-bold">
