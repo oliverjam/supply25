@@ -157,7 +157,7 @@ export default function Home() {
 					className="hidden md:block absolute w-36 right-12 top-12 z-0"
 				/>
 				<div className="max-w-lg mx-auto grid justify-items-center gap-6 text-center text-balance isolate">
-					<h2 className="text-4xl font-bold">
+					<h2 className="text-2xl md:text-4xl font-bold">
 						A seamless solution for smarter, safer decisions.
 					</h2>
 					<p>
