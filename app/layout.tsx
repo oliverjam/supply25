@@ -22,7 +22,10 @@ export default function RootLayout({
 		<html lang="en">
 			<body className={`${mona.className} text-slate-dark`}>
 				{children}
-				<script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
+				<script
+					async
+					src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"
+				></script>
 			</body>
 		</html>
 	);
