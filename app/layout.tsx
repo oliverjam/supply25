@@ -42,8 +42,8 @@ export default function RootLayout({
 				<link rel="manifest" href="/site.webmanifest" />
 			</head>
 			<body className={`${mona.className} text-slate-dark`}>
-				<nav className="ScrollShrink max-w-7xl z-50 rounded-2xl p-2 sm:p-4 text-sm sm:text-base bg-white/90 shadow-lg backdrop-blur-[2px] flex items-center justify-between gap-4 md:gap-8 lg:gap-16 fixed top-8 left-2 right-2 mx-auto">
-					<Img file={logo} alt="Supply25" className="w-24 sm:w-32 md:w-40" />
+				<nav className="ScrollShrink max-w-7xl z-50 rounded-2xl p-[0.5em] sm:p-[1em] bg-white/90 shadow-lg backdrop-blur-[2px] flex items-center justify-between gap-4 md:gap-8 lg:gap-16 fixed top-8 left-2 right-2 mx-auto">
+					<Img file={logo} alt="Supply25" className="w-[8em]" />
 					{/* <div className="flex gap-4 md:gap-8 flex-1 font-medium text-slate-dark">
 						<Link href="/" className="hover:underline">
 							Home

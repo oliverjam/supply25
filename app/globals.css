@@ -21,11 +21,13 @@
 			top: theme(space.8);
 			max-width: theme(maxWidth.7xl);
 			background-color: rgba(255, 255, 255, 0.9);
+			font-size: 1rem;
 		}
 		to {
 			top: 0;
 			max-width: theme(maxWidth.2xl);
 			background-color: rgba(255, 255, 255, 0.3);
+			font-size: 0.875rem;
 		}
 	}
 
