@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { CheckCircle, ChevronRight, Loading } from "./icons.tsx";
+import { AlertCircle, CheckCircle, ChevronRight, Loading } from "./icons.tsx";
 
 type Status = "initial" | "pending" | "fulfilled" | "rejected";
 
@@ -57,8 +57,12 @@ export function EmailForm() {
 
 const ui = {
 	rejected: {
-		icon: ">",
-		msg: <span className="text-pink">Please try again</span>,
+		icon: <ChevronRight />,
+		msg: (
+			<span className="text-pink flex gap-1 items-center">
+				<AlertCircle size={16} /> Please try again
+			</span>
+		),
 	},
 	initial: { icon: <ChevronRight />, msg: "" },
 	pending: {
