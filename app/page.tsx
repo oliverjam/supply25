@@ -1,8 +1,8 @@
 import { CallToAction } from "./cta.tsx";
 import { Img } from "./image.tsx";
-import { ImagePicker } from "./image-picker.tsx";
 import { ArrowRight } from "./icons.tsx";
 import { Logos } from "./logos.tsx";
+import { Accordion, AccordionTrigger } from "./accordion.tsx";
 import { EmailForm } from "./email-form.tsx";
 import logo from "./images/logo.svg";
 import hero from "./images/hero.png";
@@ -12,6 +12,9 @@ import suppliers from "./images/for-suppliers.png";
 import experts from "./images/for-experts.png";
 import key from "./images/key.png";
 import shapes from "./images/shapes.png";
+import feature1 from "./images/feature-1.png";
+import feature2 from "./images/feature-2.png";
+import feature2_2 from "./images/feature-2.2.png";
 import civtech from "./images/civtech-stacked.png";
 import threadr from "./images/thread-right.png";
 import threadl from "./images/thread-left.png";
@@ -157,8 +160,95 @@ export default function Home() {
 			</section>
 			<section className="py-12 px-6 sm:p-12 sm:py-24 bg-misty-light">
 				<div className="max-w-5xl mx-auto space-y-24">
-					<ImagePicker />
-					<ImagePicker />
+					<div className="grid md:grid-cols-2 items-start gap-4 group">
+						<div className="grid gap-4">
+							<Accordion name="features-1" open>
+								<AccordionTrigger>
+									Strategic Overview of All Your Procurements
+								</AccordionTrigger>
+								<p>
+									Centralised procurement activity for full visibility, enabling
+									teams to monitor progress, identify risks, and drive
+									strategic, compliant decisions.
+								</p>
+							</Accordion>
+							<Accordion name="features-1">
+								<AccordionTrigger>
+									Collaboration Across Teams of Your Organisation
+								</AccordionTrigger>
+								<p>
+									Enhanced teamwork by allowing teams to collaborate directly on
+									the platform, streamlining processes, sharing insights and
+									aligning on procurement goals.
+								</p>
+							</Accordion>
+							<Accordion name="features-1">
+								<AccordionTrigger>
+									Create Your Custom Assessments
+								</AccordionTrigger>
+								<p>
+									Tailored assessments to fit your unique procurement needs,
+									enabling a more precise evaluation of suppliers aligned with
+									your standards and objectives.
+								</p>
+							</Accordion>
+						</div>
+						<div className="relative min-h-64 md:group-[:nth-child(odd)]:order-first rounded-lg pl-4 pt-4 md:pl-12 md:pt-12 bg-candy h-full overflow-hidden *:object-cover *:object-left">
+							<Img
+								file={feature1}
+								className="absolute rounded-tl-xl shadow-lg"
+							/>
+						</div>
+					</div>
+					<div className="grid lg:grid-cols-2 items-start gap-4 group">
+						<div className="grid gap-4">
+							<Accordion name="features-2" open>
+								<AccordionTrigger>
+									Automated Contact Management
+								</AccordionTrigger>
+								<p>
+									No more manual reassessments of your suppliers - our system
+									handles compliance checks and reminders, ensuring your
+									suppliers stay up-to-date with certifications and standards
+								</p>
+							</Accordion>
+							<Accordion name="features-2">
+								<AccordionTrigger>
+									Compliance with Best-in-Class Standards
+								</AccordionTrigger>
+								<p>
+									Access a library of high-quality, proven assessments to ensure
+									your procurement process meets top industry standards with
+									ease and confidence.
+								</p>
+							</Accordion>
+							<Accordion name="features-2">
+								<AccordionTrigger>Supply Chain Mapping</AccordionTrigger>
+								<p>
+									Map your supply chains to gain insights and identify potential
+									risks, enhancing resilience and reducing vulnerabilities.
+								</p>
+							</Accordion>
+							<Accordion name="features-2">
+								<AccordionTrigger>Supporting Suppliers</AccordionTrigger>
+								<p>
+									Save time by reusing answers from past assessments, and get a
+									second chance with improvement plans if standards aren’t met.
+									In-tool guidance makes compliance easier and more achievable.
+								</p>
+							</Accordion>
+						</div>
+						<div className="relative min-h-64 lg:group-[:nth-child(odd)]:order-first rounded-lg pl-4 pt-4 md:pl-12 md:pt-12 bg-cornflower h-full overflow-hidden">
+							<Img
+								file={feature2}
+								className="absolute h-full top-20 right-12 rounded-tr-xl shadow-lg object-cover object-right-top"
+							/>
+							<Img
+								file={feature2_2}
+								className="absolute w-64 top-8 right-20 rounded-xl shadow-lg object-cover object-top"
+							/>
+						</div>
+					</div>
 				</div>
 			</section>
 			<section className="py-12 px-6 sm:p-12 sm:py-24 bg-gradient-to-b from-white to-misty-light relative shadow-lg">
