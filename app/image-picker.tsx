@@ -79,9 +79,9 @@ export function ImagePicker() {
 				</label>
 			</div>
 			<div className="group-[:nth-child(odd)]:order-first rounded-lg pl-12 pt-12 bg-candy *:h-full *:object-cover">
-				{selected === 0 && <Img {...overview} id="section-1-1-img" />}
-				{selected === 1 && <Img {...overview} id="section-1-2-img" />}
-				{selected === 2 && <Img {...overview} id="section-1-3-img" />}
+				{selected === 0 && <Img file={overview} id="section-1-1-img" />}
+				{selected === 1 && <Img file={overview} id="section-1-2-img" />}
+				{selected === 2 && <Img file={overview} id="section-1-3-img" />}
 			</div>
 		</form>
 	);
