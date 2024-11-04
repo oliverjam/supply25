@@ -20,4 +20,24 @@
 	.Overlap > :last-child {
 		grid-row: 2 / 4;
 	}
+
+	.Squares {
+		background-image: repeating-linear-gradient(
+				to bottom,
+				transparent,
+				transparent 10px,
+				#fff 10px,
+				#fff 50px
+			),
+			repeating-linear-gradient(
+				to right,
+				theme(colors[misty]),
+				theme(colors[misty]) 10px,
+				#fff 10px,
+				#fff 50px
+			);
+		background-size: 95% 8rem;
+		background-repeat: no-repeat;
+		background-position: center 4rem;
+	}
 }
