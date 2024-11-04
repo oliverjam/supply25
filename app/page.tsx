@@ -5,6 +5,7 @@ import what from "./images/what-we-do.png";
 import buyers from "./images/for-buyers.png";
 import { Logos } from "./logos.tsx";
 import { type StaticImageData } from "next/image";
+import { ImagePicker } from "./image-picker.tsx";
 
 export default function Home() {
 	return (
@@ -137,13 +138,23 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
+			<section className="py-12 px-6 sm:p-12 sm:py-24 bg-misty-light">
+				<div className="max-w-5xl mx-auto space-y-24">
+					<ImagePicker />
+					<ImagePicker />
+				</div>
+			</section>
 			<section className="min-h-[50vh]"></section>
 		</>
 	);
 }
 
-type ImgProps = StaticImageData & { className?: string; alt?: string };
-function Img({ alt = "", src, width, height, className }: ImgProps) {
+type ImgProps = StaticImageData & {
+	className?: string;
+	alt?: string;
+	id?: string;
+};
+export function Img({ alt = "", src, width, height, className, id }: ImgProps) {
 	return (
 		<img
 			src={src}
@@ -151,6 +162,7 @@ function Img({ alt = "", src, width, height, className }: ImgProps) {
 			height={height}
 			alt={alt}
 			className={className}
+			id={id}
 		/>
 	);
 }
