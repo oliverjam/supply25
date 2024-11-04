@@ -3,6 +3,8 @@ import logo from "./images/logo.svg";
 import hero from "./images/hero.png";
 import what from "./images/what-we-do.png";
 import buyers from "./images/for-buyers.png";
+import suppliers from "./images/for-suppliers.png";
+import experts from "./images/for-experts.png";
 import key from "./images/key.png";
 import shapes from "./images/shapes.png";
 import civtech from "./images/civtech-stacked.png";
@@ -23,7 +25,7 @@ import { ArrowRight, Phone } from "./icons.tsx";
 export default function Home() {
 	return (
 		<>
-			<nav className="z-50 rounded-2xl p-2 sm:p-4 text-sm sm:text-base bg-white/90 shadow-lg backdrop-blur flex items-center gap-4 md:gap-8 lg:gap-16 fixed top-8 left-2 right-2 mx-auto max-w-7xl">
+			<nav className="ScrollShrink max-w-7xl z-50 rounded-2xl p-2 sm:p-4 text-sm sm:text-base bg-white/90 shadow-lg backdrop-blur-[2px] flex items-center gap-4 md:gap-8 lg:gap-16 fixed top-8 left-2 right-2 mx-auto">
 				<Img file={logo} alt="Supply25" className="w-24 sm:w-32 md:w-40" />
 				<div className="flex gap-4 md:gap-8 flex-1 font-medium text-slate-dark">
 					<Link href="/" className="hover:underline">

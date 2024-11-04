@@ -3,6 +3,26 @@
 @tailwind utilities;
 
 @layer components {
+	.ScrollShrink {
+		view-timeline-axis: block;
+		animation: shrink linear both;
+		animation-timeline: scroll();
+		animation-range: 0 200px;
+	}
+
+	@keyframes shrink {
+		from {
+			top: theme(space.8);
+			max-width: theme(maxWidth.7xl);
+			background-color: rgba(255, 255, 255, 0.9);
+		}
+		to {
+			top: 0;
+			max-width: theme(maxWidth.2xl);
+			background-color: rgba(255, 255, 255, 0.3);
+		}
+	}
+
 	.Overlap {
 		display: grid;
 		--overlap: 2rem;
