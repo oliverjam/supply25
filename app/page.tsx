@@ -24,15 +24,16 @@ import squares from "./images/squares.png";
 export default function Home() {
 	return (
 		<>
-			<section className="pt-32 sm:pt-48 px-4 sm:px-8 pb-12 bg-misty-light">
+			<section className="pt-32 sm:pt-48 px-4 sm:px-8 pb-36 bg-misty-light">
 				<div className="max-w-6xl mx-auto lg:grid grid-cols-[auto_1fr] items-center gap-2">
-					<div className="max-w-xl space-y-8 text-slate-dark">
-						<h1 className="font-bold text-4xl sm:text-6xl leading-tight">
-							The future of intelligent procurement.
+					<div className="max-w-2xl space-y-8 text-slate-dark">
+						<h1 className="font-bold text-4xl sm:text-6xl text-balance">
+							Making procurement better, faster and more secure.
 						</h1>
 						<p className="text-2xl">
-							Streamlining procurement by connecting public sector buyers with
-							expert knowledge, ensuring compliance and supply chain resilience.
+							A platform that allows buyers to easily create and adopt tried and
+							tested high quality assessments for their procurements, that
+							suppliers can complete seamlessly.
 						</p>
 						<CallToAction />
 					</div>
@@ -71,7 +72,7 @@ export default function Home() {
 				<div className="space-y-28 md:space-y-48">
 					<div className="Overlap max-w-5xl mx-auto isolate">
 						<Card>
-							<div>
+							<div className="space-y-4">
 								<h2 className="text-aubergine">
 									<div>For</div>
 									<div className="text-2xl sm:text-4xl md:text-5xl font-bold">
@@ -79,28 +80,30 @@ export default function Home() {
 									</div>
 								</h2>
 								<p className="text-slate-light">
-									Manage your procurement process on one platform Manage your
-									procurement process on one platform Manage your procurement
+									Choose and customise high-quality assessments and easily share
+									them with your suppliers to ensure your supply chains are
+									safe, resilient and robust.
 								</p>
 							</div>
 							<Img file={buyers} />
 						</Card>
 						<div className="grid md:grid-cols-3 gap-2 sm:gap-4 md:gap-6 px-6 sm:px-8">
 							<CardDark>
-								Manage your procurement process on one platform.
+								Access a library of tried and tested assessments, such as Cyber
+								Security, Data Protection and Accessibility.
 							</CardDark>
 							<CardDark>
 								Automated contract management to make your life easier.
 							</CardDark>
 							<CardDark>
-								Access to industry approved assessments to assure your
-								suppliers.
+								Gain insights into your suppliers and supply chain with a
+								personalised dashboard of graphs and key metrics.
 							</CardDark>
 						</div>
 					</div>
 					<div className="Overlap max-w-5xl mx-auto isolate">
 						<Card>
-							<div>
+							<div className="space-y-4">
 								<h2 className="text-aubergine">
 									<div>For</div>
 									<div className="text-2xl sm:text-4xl md:text-5xl font-bold">
@@ -108,28 +111,30 @@ export default function Home() {
 									</div>
 								</h2>
 								<p className="text-slate-light">
-									Manage your procurement process on one platform Manage your
-									procurement process on one platform Manage your procurement
+									Save time by completing an assessment once and reuse it to
+									streamline your bids for future tenders.
 								</p>
 							</div>
 							<Img file={suppliers} />
 						</Card>
 						<div className="grid md:grid-cols-3 gap-2 sm:gap-4 md:gap-6 px-6 sm:px-8">
 							<CardDark>
-								Manage your procurement process on one platform.
+								Expert guidance to help you complete assessments efficiently and
+								to a high standard.
 							</CardDark>
 							<CardDark>
-								Automated contract management to make your life easier.
+								Utilise the improvement plan process to increase your chances of
+								winning tenders.
 							</CardDark>
 							<CardDark>
-								Access to industry approved assessments to assure your
-								suppliers.
+								Reuse your answers and completed assessments to streamline and
+								speed up future tender applications.
 							</CardDark>
 						</div>
 					</div>
 					<div className="Overlap max-w-5xl mx-auto isolate">
 						<Card>
-							<div>
+							<div className="space-y-4">
 								<h2 className="text-aubergine">
 									<div>For</div>
 									<div className="text-2xl sm:text-4xl md:text-5xl font-bold">
@@ -137,22 +142,24 @@ export default function Home() {
 									</div>
 								</h2>
 								<p className="text-slate-light">
-									Manage your procurement process on one platform Manage your
-									procurement process on one platform Manage your procurement
+									Share your assessments to build authority and establish
+									yourself as a thought leader in your area of expertise.
 								</p>
 							</div>
 							<Img file={experts} />
 						</Card>
 						<div className="grid md:grid-cols-3 gap-2 sm:gap-4 md:gap-6 px-6 sm:px-8">
 							<CardDark>
-								Manage your procurement process on one platform.
+								Discover industry trends and insights as buyers and suppliers
+								adopt your assessments.
 							</CardDark>
 							<CardDark>
-								Automated contract management to make your life easier.
+								Enhance your visibility and build your reputation as a thought
+								leader in the industry.
 							</CardDark>
 							<CardDark>
-								Access to industry approved assessments to assure your
-								suppliers.
+								Provide consultancy and advisory support to suppliers looking to
+								elevate their compliance and business standards.
 							</CardDark>
 						</div>
 					</div>
@@ -350,7 +357,7 @@ function Card({ children }: { children: React.ReactNode }) {
 
 function CardDark({ children }: { children: React.ReactNode }) {
 	return (
-		<div className="p-4 sm:p-6 rounded-xl bg-slate text-white text-sm font-medium">
+		<div className="p-4 sm:p-6 rounded-xl bg-slate text-white text-sm font-medium grid content-center">
 			{children}
 		</div>
 	);
