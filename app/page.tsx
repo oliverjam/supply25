@@ -148,7 +148,7 @@ export default function Home() {
 					<ImagePicker />
 				</div>
 			</section>
-			<section className="py-12 px-6 sm:p-12 sm:py-24 bg-gradient-to-b from-white to-misty-light relative">
+			<section className="py-12 px-6 sm:p-12 sm:py-24 bg-gradient-to-b from-white to-misty-light relative shadow-lg">
 				<Img
 					file={key}
 					className="hidden md:block absolute w-60 bottom-12 left-12 z-0"
