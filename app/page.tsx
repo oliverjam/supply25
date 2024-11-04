@@ -206,19 +206,31 @@ export default function Home() {
 					</div>
 					<form>
 						<h2>Get updates straight to your inbox</h2>
-						<input
-							type="email"
-							name="email"
-							id="email"
-							placeholder="Your email"
-							aria-label="Your email"
-							className="border"
-						/>
+						<InputGroup>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Your email"
+								aria-label="Your email"
+							/>
+						</InputGroup>
 					</form>
 				</div>
 			</footer>
 			<section className="min-h-[50vh]"></section>
 		</>
+	);
+}
+
+function InputGroup({ children }: { children: React.ReactNode }) {
+	return (
+		<div className="rounded-lg border-2 border-pink flex [&>input]:flex-1 [&>input]:p-2 [&>input]:rounded-l-lg">
+			{children}
+			<button className="bg-pink text-white w-10 p-2 grid place-content-center">
+				{">"}
+			</button>
+		</div>
 	);
 }
 
