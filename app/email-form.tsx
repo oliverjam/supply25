@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { CheckCircle, ChevronRight, Loading } from "./icons.tsx";
 
 type Status = "initial" | "pending" | "fulfilled" | "rejected";
 
@@ -40,7 +41,7 @@ export function EmailForm() {
 				<button
 					aria-label="Submit email"
 					disabled={disabled}
-					className="bg-pink disabled:bg-powder text-white py-2 px-4 grid place-content-center"
+					className="bg-pink disabled:bg-powder text-white px-3 grid place-content-center"
 				>
 					{icon}
 				</button>
@@ -59,10 +60,13 @@ const ui = {
 		icon: ">",
 		msg: <span className="text-pink">Please try again</span>,
 	},
-	initial: { icon: ">", msg: "" },
-	pending: { icon: "🔄", msg: "" },
+	initial: { icon: <ChevronRight />, msg: "" },
+	pending: {
+		icon: <Loading className="animate-spin [animation-duration:2s]" />,
+		msg: "",
+	},
 	fulfilled: {
-		icon: "✔︎",
+		icon: <CheckCircle />,
 		msg: <span className="text-powder">Email submitted</span>,
 	},
 } as const;

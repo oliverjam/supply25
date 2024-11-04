@@ -14,6 +14,7 @@ import { Logos } from "./logos.tsx";
 import { type StaticImageData } from "next/image";
 import { ImagePicker } from "./image-picker.tsx";
 import { EmailForm } from "./email-form.tsx";
+import { ArrowRight, Phone } from "./icons.tsx";
 
 export default function Home() {
 	return (
@@ -206,8 +207,15 @@ export default function Home() {
 						<span className="text-lg md:text-2xl font-bold">
 							2024 Challenge Winner
 						</span>
-						<span aria-hidden="true" className="font-medium underline">
+						<span
+							aria-hidden="true"
+							className="font-medium max-w-max border-b border-current flex items-center gap-1"
+						>
 							Read more
+							<ArrowRight
+								size={16}
+								className="transition-transform group-hover:translate-x-0.5"
+							/>
 						</span>
 					</div>
 				</a>
@@ -278,7 +286,8 @@ function CardDark({ children }: { children: React.ReactNode }) {
 
 function CallToAction() {
 	return (
-		<a className="max-w-max flex items-center rounded shadow p-2 sm:p-3 bg-pink text-white font-bold">
+		<a className="max-w-max flex items-center gap-2 rounded shadow p-2 sm:p-3 bg-pink text-white font-bold">
+			<Phone size={24} />
 			Book a Call
 		</a>
 	);
