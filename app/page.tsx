@@ -212,21 +212,21 @@ export default function Home() {
 						</span>
 					</div>
 				</a>
-				<div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+				<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 					<div className="grid gap-1 content-start">
 						<Img file={logo} className="w-36" />
 						<div className="text-xs">© 2024</div>
 					</div>
-					<div className="grid gap-1 content-start font-bold">
+					{/* <div className="grid gap-1 content-start font-bold">
 						<a href="/home">Home</a>
 						<a href="/team">Team</a>
-					</div>
+					</div> */}
 					<div className="grid gap-1 content-start">
 						<h2>Contact</h2>
 						<a href="mailto:hello@supply25.com" className="font-bold">
 							hello@supply25.com
 						</a>
-						<div className="flex gap-4">
+						{/* <div className="flex gap-4">
 							<a href="">
 								<Img file={x} />
 							</a>
@@ -239,7 +239,7 @@ export default function Home() {
 							<a href="">
 								<Img file={linkedin} />
 							</a>
-						</div>
+						</div> */}
 					</div>
 					<div className="space-y-2">
 						<h2 className="text-lg font-bold">
