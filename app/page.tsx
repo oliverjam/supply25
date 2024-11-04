@@ -3,6 +3,8 @@ import logo from "./images/logo.svg";
 import hero from "./images/hero.png";
 import what from "./images/what-we-do.png";
 import buyers from "./images/for-buyers.png";
+import key from "./images/key.png";
+import shapes from "./images/shapes.png";
 import { Logos } from "./logos.tsx";
 import { type StaticImageData } from "next/image";
 import { ImagePicker } from "./image-picker.tsx";
@@ -142,6 +144,26 @@ export default function Home() {
 				<div className="max-w-5xl mx-auto space-y-24">
 					<ImagePicker />
 					<ImagePicker />
+				</div>
+			</section>
+			<section className="py-12 px-6 sm:p-12 sm:py-24 bg-gradient-to-b from-white to-misty-light relative">
+				<Img
+					{...key}
+					className="hidden md:block absolute w-60 bottom-12 left-12 z-0"
+				/>
+				<Img
+					{...shapes}
+					className="hidden md:block absolute w-36 right-12 top-12 z-0"
+				/>
+				<div className="max-w-lg mx-auto grid justify-items-center gap-6 text-center text-balance isolate">
+					<h2 className="text-4xl font-bold">
+						A seamless solution for smarter, safer decisions.
+					</h2>
+					<p>
+						Schedule a call and discover how Supply25 can streamline your
+						procurement process
+					</p>
+					<CallToAction />
 				</div>
 			</section>
 			<section className="min-h-[50vh]"></section>
