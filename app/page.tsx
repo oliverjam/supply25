@@ -1,7 +1,7 @@
-import Link from "next/link";
+import { CallToAction } from "./cta.tsx";
 import { Img } from "./image.tsx";
 import { ImagePicker } from "./image-picker.tsx";
-import { ArrowRight, Phone } from "./icons.tsx";
+import { ArrowRight } from "./icons.tsx";
 import { Logos } from "./logos.tsx";
 import { EmailForm } from "./email-form.tsx";
 import logo from "./images/logo.svg";
@@ -25,18 +25,6 @@ import linkedin from "./images/logos/linkedin.svg";
 export default function Home() {
 	return (
 		<>
-			<nav className="ScrollShrink max-w-7xl z-50 rounded-2xl p-2 sm:p-4 text-sm sm:text-base bg-white/90 shadow-lg backdrop-blur-[2px] flex items-center gap-4 md:gap-8 lg:gap-16 fixed top-8 left-2 right-2 mx-auto">
-				<Img file={logo} alt="Supply25" className="w-24 sm:w-32 md:w-40" />
-				<div className="flex gap-4 md:gap-8 flex-1 font-medium text-slate-dark">
-					<Link href="/" className="hover:underline">
-						Home
-					</Link>
-					<Link href="/team" className="hover:underline">
-						Team
-					</Link>
-				</div>
-				<CallToAction />
-			</nav>
 			<section className="pt-32 sm:pt-48 px-4 sm:px-8 pb-12 bg-misty-light">
 				<div className="max-w-6xl mx-auto lg:grid grid-cols-[auto_1fr] items-center gap-2">
 					<div className="max-w-xl space-y-8 text-slate-dark">
@@ -279,14 +267,5 @@ function CardDark({ children }: { children: React.ReactNode }) {
 		<div className="p-4 sm:p-6 rounded-xl bg-slate text-white text-sm font-medium">
 			{children}
 		</div>
-	);
-}
-
-function CallToAction() {
-	return (
-		<a className="max-w-max flex items-center gap-2 rounded shadow p-2 sm:p-3 bg-pink text-white font-bold">
-			<Phone size={24} />
-			Book a Call
-		</a>
 	);
 }
