@@ -2,7 +2,6 @@ import { CallToAction } from "./ui/cta.tsx";
 import { Img } from "./ui/image.tsx";
 import { ArrowRight } from "./ui/icons.tsx";
 import { Logos } from "./ui/logos.tsx";
-import { Accordion, AccordionTrigger } from "./ui/accordion.tsx";
 import { EmailForm } from "./ui/email-form.tsx";
 import logo from "./images/logo.svg";
 import hero from "./images/hero.png";
@@ -171,36 +170,32 @@ export default function Home() {
 				<div className="max-w-5xl mx-auto space-y-24">
 					<div className="grid md:grid-cols-2 items-start gap-4 group">
 						<div className="grid gap-4">
-							<Accordion name="features-1" open>
-								<AccordionTrigger>
-									Strategic Overview of All Your Procurements
-								</AccordionTrigger>
+							<details className="Details" name="features-1" open>
+								<summary>Strategic Overview of All Your Procurements</summary>
 								<p>
 									Centralised procurement activity for full visibility, enabling
 									teams to monitor progress, identify risks, and drive
 									strategic, compliant decisions.
 								</p>
-							</Accordion>
-							<Accordion name="features-1">
-								<AccordionTrigger>
+							</details>
+							<details className="Details" name="features-1">
+								<summary>
 									Collaboration Across Teams of Your Organisation
-								</AccordionTrigger>
+								</summary>
 								<p>
 									Enhanced teamwork by allowing teams to collaborate directly on
 									the platform, streamlining processes, sharing insights and
 									aligning on procurement goals.
 								</p>
-							</Accordion>
-							<Accordion name="features-1">
-								<AccordionTrigger>
-									Create Your Custom Assessments
-								</AccordionTrigger>
+							</details>
+							<details className="Details" name="features-1">
+								<summary>Create Your Custom Assessments</summary>
 								<p>
 									Tailored assessments to fit your unique procurement needs,
 									enabling a more precise evaluation of suppliers aligned with
 									your standards and objectives.
 								</p>
-							</Accordion>
+							</details>
 						</div>
 						<div className="relative min-h-64 md:group-[:nth-child(odd)]:order-first rounded-lg pl-4 pt-4 md:pl-12 md:pt-12 bg-candy h-full overflow-hidden *:object-cover *:object-left">
 							<Img
@@ -211,41 +206,37 @@ export default function Home() {
 					</div>
 					<div className="grid lg:grid-cols-2 items-start gap-4 group">
 						<div className="grid gap-4">
-							<Accordion name="features-2" open>
-								<AccordionTrigger>
-									Automated Contact Management
-								</AccordionTrigger>
+							<details className="Details" name="features-2" open>
+								<summary>Automated Contact Management</summary>
 								<p>
 									No more manual reassessments of your suppliers - our system
 									handles compliance checks and reminders, ensuring your
 									suppliers stay up-to-date with certifications and standards
 								</p>
-							</Accordion>
-							<Accordion name="features-2">
-								<AccordionTrigger>
-									Compliance with Best-in-Class Standards
-								</AccordionTrigger>
+							</details>
+							<details className="Details" name="features-2">
+								<summary>Compliance with Best-in-Class Standards</summary>
 								<p>
 									Access a library of high-quality, proven assessments to ensure
 									your procurement process meets top industry standards with
 									ease and confidence.
 								</p>
-							</Accordion>
-							<Accordion name="features-2">
-								<AccordionTrigger>Supply Chain Mapping</AccordionTrigger>
+							</details>
+							<details className="Details" name="features-2">
+								<summary>Supply Chain Mapping</summary>
 								<p>
 									Map your supply chains to gain insights and identify potential
 									risks, enhancing resilience and reducing vulnerabilities.
 								</p>
-							</Accordion>
-							<Accordion name="features-2">
-								<AccordionTrigger>Supporting Suppliers</AccordionTrigger>
+							</details>
+							<details className="Details" name="features-2">
+								<summary>Supporting Suppliers</summary>
 								<p>
 									Save time by reusing answers from past assessments, and get a
 									second chance with improvement plans if standards aren’t met.
 									In-tool guidance makes compliance easier and more achievable.
 								</p>
-							</Accordion>
+							</details>
 						</div>
 						<div className="relative min-h-64 lg:group-[:nth-child(odd)]:order-first rounded-lg pl-4 pt-4 md:pl-12 md:pt-12 bg-cornflower h-full overflow-hidden">
 							<Img

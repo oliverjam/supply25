@@ -49,6 +49,29 @@
 		grid-row: 2 / 4;
 	}
 
+	.Details {
+		border-radius: theme(borderRadius[lg]);
+		border-width: theme(borderWidth[DEFAULT]);
+		border-color: theme(colors[misty]);
+		padding: theme(space.6);
+		&[open] {
+			background-color: theme(colors[white]);
+			box-shadow: theme(boxShadow[md]);
+		}
+		> summary {
+			list-style: none;
+			color: theme(colors[slate]);
+			font-weight: theme(fontWeight[medium]);
+			cursor: pointer;
+			&::-webkit-details-marker {
+				display: none;
+			}
+			@media screen(md) {
+				font-size: theme(fontSize[lg]);
+			}
+		}
+	}
+
 	.Squares {
 		background-image: repeating-linear-gradient(
 				to bottom,
