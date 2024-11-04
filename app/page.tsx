@@ -6,6 +6,8 @@ import buyers from "./images/for-buyers.png";
 import key from "./images/key.png";
 import shapes from "./images/shapes.png";
 import civtech from "./images/civtech-stacked.png";
+import threadr from "./images/thread-right.png";
+import threadl from "./images/thread-left.png";
 import { Logos } from "./logos.tsx";
 import { type StaticImageData } from "next/image";
 import { ImagePicker } from "./image-picker.tsx";
@@ -56,89 +58,102 @@ export default function Home() {
 					<Img file={what} />
 				</div>
 			</section>
-			<section className="py-12 px-6 sm:p-12 sm:py-24 bg-misty space-y-28 md:space-y-48">
-				<div className="Overlap max-w-5xl mx-auto">
-					<Card>
-						<div>
-							<h2 className="text-aubergine">
-								<div>For</div>
-								<div className="text-2xl sm:text-4xl md:text-5xl font-bold">
-									Experts...
-								</div>
-							</h2>
-							<p className="text-slate-light">
-								Manage your procurement process on one platform Manage your
-								procurement process on one platform Manage your procurement
-							</p>
+			<section className="relative py-12 px-6 sm:p-12 sm:py-24 bg-misty">
+				<Img
+					file={threadr}
+					className="absolute right-0 top-[30%] md:top-[25%] w-1/2"
+				/>
+				<Img
+					file={threadl}
+					className="absolute left-0 top-[60%] md:top-[50%] w-1/2"
+				/>
+				<div className="space-y-28 md:space-y-48">
+					<div className="Overlap max-w-5xl mx-auto isolate">
+						<Card>
+							<div>
+								<h2 className="text-aubergine">
+									<div>For</div>
+									<div className="text-2xl sm:text-4xl md:text-5xl font-bold">
+										Experts...
+									</div>
+								</h2>
+								<p className="text-slate-light">
+									Manage your procurement process on one platform Manage your
+									procurement process on one platform Manage your procurement
+								</p>
+							</div>
+							<Img file={buyers} />
+						</Card>
+						<div className="grid md:grid-cols-3 gap-2 sm:gap-4 md:gap-6 px-6 sm:px-8">
+							<CardDark>
+								Manage your procurement process on one platform.
+							</CardDark>
+							<CardDark>
+								Automated contract management to make your life easier.
+							</CardDark>
+							<CardDark>
+								Access to industry approved assessments to assure your
+								suppliers.
+							</CardDark>
 						</div>
-						<Img file={buyers} />
-					</Card>
-					<div className="grid md:grid-cols-3 gap-2 sm:gap-4 md:gap-6 px-6 sm:px-8">
-						<CardDark>
-							Manage your procurement process on one platform.
-						</CardDark>
-						<CardDark>
-							Automated contract management to make your life easier.
-						</CardDark>
-						<CardDark>
-							Access to industry approved assessments to assure your suppliers.
-						</CardDark>
 					</div>
-				</div>
-				<div className="Overlap max-w-5xl mx-auto">
-					<Card>
-						<div>
-							<h2 className="text-aubergine">
-								<div>For</div>
-								<div className="text-2xl sm:text-4xl md:text-5xl font-bold">
-									Buyers...
-								</div>
-							</h2>
-							<p className="text-slate-light">
-								Manage your procurement process on one platform Manage your
-								procurement process on one platform Manage your procurement
-							</p>
+					<div className="Overlap max-w-5xl mx-auto isolate">
+						<Card>
+							<div>
+								<h2 className="text-aubergine">
+									<div>For</div>
+									<div className="text-2xl sm:text-4xl md:text-5xl font-bold">
+										Buyers...
+									</div>
+								</h2>
+								<p className="text-slate-light">
+									Manage your procurement process on one platform Manage your
+									procurement process on one platform Manage your procurement
+								</p>
+							</div>
+							<Img file={buyers} />
+						</Card>
+						<div className="grid md:grid-cols-3 gap-2 sm:gap-4 md:gap-6 px-6 sm:px-8">
+							<CardDark>
+								Manage your procurement process on one platform.
+							</CardDark>
+							<CardDark>
+								Automated contract management to make your life easier.
+							</CardDark>
+							<CardDark>
+								Access to industry approved assessments to assure your
+								suppliers.
+							</CardDark>
 						</div>
-						<Img file={buyers} />
-					</Card>
-					<div className="grid md:grid-cols-3 gap-2 sm:gap-4 md:gap-6 px-6 sm:px-8">
-						<CardDark>
-							Manage your procurement process on one platform.
-						</CardDark>
-						<CardDark>
-							Automated contract management to make your life easier.
-						</CardDark>
-						<CardDark>
-							Access to industry approved assessments to assure your suppliers.
-						</CardDark>
 					</div>
-				</div>
-				<div className="Overlap max-w-5xl mx-auto">
-					<Card>
-						<div>
-							<h2 className="text-aubergine">
-								<div>For</div>
-								<div className="text-2xl sm:text-4xl md:text-5xl font-bold">
-									Suppliers...
-								</div>
-							</h2>
-							<p className="text-slate-light">
-								Manage your procurement process on one platform Manage your
-								procurement process on one platform Manage your procurement
-							</p>
+					<div className="Overlap max-w-5xl mx-auto isolate">
+						<Card>
+							<div>
+								<h2 className="text-aubergine">
+									<div>For</div>
+									<div className="text-2xl sm:text-4xl md:text-5xl font-bold">
+										Suppliers...
+									</div>
+								</h2>
+								<p className="text-slate-light">
+									Manage your procurement process on one platform Manage your
+									procurement process on one platform Manage your procurement
+								</p>
+							</div>
+							<Img file={buyers} />
+						</Card>
+						<div className="grid md:grid-cols-3 gap-2 sm:gap-4 md:gap-6 px-6 sm:px-8">
+							<CardDark>
+								Manage your procurement process on one platform.
+							</CardDark>
+							<CardDark>
+								Automated contract management to make your life easier.
+							</CardDark>
+							<CardDark>
+								Access to industry approved assessments to assure your
+								suppliers.
+							</CardDark>
 						</div>
-						<Img file={buyers} />
-					</Card>
-					<div className="grid md:grid-cols-3 gap-2 sm:gap-4 md:gap-6 px-6 sm:px-8">
-						<CardDark>
-							Manage your procurement process on one platform.
-						</CardDark>
-						<CardDark>
-							Automated contract management to make your life easier.
-						</CardDark>
-						<CardDark>
-							Access to industry approved assessments to assure your suppliers.
-						</CardDark>
 					</div>
 				</div>
 			</section>
