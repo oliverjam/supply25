@@ -18,9 +18,17 @@ export default function Team() {
 				<div className="flex flex-wrap justify-center gap-4 *:w-80">
 					<TeamCard name="Alexis Lui" title="CEO & Co-Founder" image={Alexis} />
 					<TeamCard name="Alex Wong" title="CTO & Co-Founder" image={Alex} />
-					<TeamCard name="Alexis Lui" title="CEO & Co-Founder" image={Alexis} />
-					<TeamCard name="Alexis Lui" title="CEO & Co-Founder" image={Alexis} />
-					<TeamCard name="Alex Wong" title="CTO & Co-Founder" image={Alex} />
+					<TeamCard
+						name="Viola Smith"
+						title="Product Designer"
+						image={Alexis}
+					/>
+					<TeamCard
+						name="Nadia Kochilas"
+						title="Delivery Lead"
+						image={Alexis}
+					/>
+					<TeamCard name="Tyrell Yu" title="Software Engineer" image={Alex} />
 				</div>
 			</section>
 			<section className="max-w-5xl mx-auto p-6 space-y-12">
