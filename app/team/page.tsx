@@ -72,7 +72,7 @@ export default function Team() {
 				</div>
 			</section>
 			<section className="p-6">
-				<div className="max-w-3xl mx-auto rounded-xl bg-white shadow-xl p-8 md:p-12 lg:p-16 text-slate-dark">
+				<div className="md:-mb-16 max-w-3xl mx-auto rounded-xl bg-white shadow-xl p-8 md:p-12 lg:p-16 text-slate-dark">
 					<div className="grid sm:grid-cols-2 gap-8">
 						<Img file={Hire} />
 						<div className="space-y-3 sm:space-y-6">

@@ -4,6 +4,7 @@ import "./globals.css";
 import { Img } from "./ui/image.tsx";
 import logo from "./images/logo.svg";
 import { CallToAction } from "./ui/cta.tsx";
+import { Footer } from "./ui/footer.tsx";
 
 const mona = localFont({
 	src: "./fonts/mona-sans.woff2",
@@ -54,6 +55,7 @@ export default function RootLayout({
 					<CallToAction />
 				</nav>
 				{children}
+				<Footer />
 				<script
 					async
 					src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"

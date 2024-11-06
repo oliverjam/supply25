@@ -1,9 +1,7 @@
 import { CallToAction } from "./ui/cta.tsx";
 import { Img } from "./ui/image.tsx";
-import { ArrowRight } from "./ui/icons.tsx";
 import { Logos } from "./ui/logos.tsx";
-import { EmailForm } from "./ui/email-form.tsx";
-import logo from "./images/logo.svg";
+import { ArrowRight } from "./ui/icons.tsx";
 import hero from "./images/hero.png";
 import what from "./images/what-we-do.png";
 import buyers from "./images/for-buyers.png";
@@ -14,11 +12,11 @@ import shapes from "./images/shapes.png";
 import feature1 from "./images/feature-1.png";
 import feature2 from "./images/feature-2.png";
 import feature2_2 from "./images/feature-2.2.png";
-import civtech from "./images/civtech-stacked.png";
 import threadr from "./images/thread-right.png";
 import threadl from "./images/thread-left.png";
 import cog from "./images/cog.png";
 import squares from "./images/squares.png";
+import civtech from "./images/civtech-stacked.png";
 
 export const metadata = {
 	title: "Supply 25",
@@ -271,7 +269,7 @@ export default function Home() {
 					<CallToAction />
 				</div>
 			</section>
-			<footer className="py-12 px-6 sm:p-12 sm:pt-32 pb-24 space-y-24 sm:space-y-32 text-sm lg:text-base Squares">
+			<section className="py-12 px-6 sm:p-12 sm:pt-32 pb-24 Squares">
 				<a
 					href="https://www.civtech.scot/demo-day-9-supply25"
 					target="_blank"
@@ -299,43 +297,7 @@ export default function Home() {
 						</span>
 					</div>
 				</a>
-				<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-					<div className="grid gap-1 content-start">
-						<Img file={logo} className="w-36" />
-						<div className="text-xs">© 2024</div>
-					</div>
-					{/* <div className="grid gap-1 content-start font-bold">
-						<a href="/home">Home</a>
-						<a href="/team">Team</a>
-					</div> */}
-					<div className="grid gap-1 content-start">
-						<h2>Contact</h2>
-						<a href="mailto:hello@supply25.com" className="font-bold">
-							hello@supply25.com
-						</a>
-						{/* <div className="flex gap-4">
-							<a href="">
-								<Img file={x} />
-							</a>
-							<a href="">
-								<Img file={facebook} />
-							</a>
-							<a href="">
-								<Img file={instagram} />
-							</a>
-							<a href="">
-								<Img file={linkedin} />
-							</a>
-						</div> */}
-					</div>
-					<div className="space-y-2">
-						<h2 className="text-lg font-bold">
-							Get updates straight to your inbox
-						</h2>
-						<EmailForm />
-					</div>
-				</div>
-			</footer>
+			</section>
 		</>
 	);
 }
