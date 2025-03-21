@@ -9,11 +9,18 @@
 }
 
 @layer components {
-	.ScrollShrink {
-		view-timeline-axis: block;
-		animation: shrink linear both;
-		animation-timeline: scroll();
-		animation-range: 0 200px;
+	/*
+		Only define scroll animation if properly supported
+		Firefox (v136) supports scroll animations but _not_ animation-timeline
+		So we have to check both to avoid the animation going on for the entire page
+	*/
+	@supports ((animation-timeline: scroll()) and (animation-range: 0% 100%)) {
+		.ScrollShrink {
+			view-timeline-axis: block;
+			animation: shrink linear both;
+			animation-timeline: scroll();
+			animation-range: 0 200px;
+		}
 	}
 
 	@keyframes shrink {
